@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+#main-cont{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: no-wrap;
+  width: 300px;
+  height: 150px;
+  border: 2px solid red;
+  background-color: dimgrey;
+  color: white;
+}
+
+.box{
+  display: inline-block;
+  /* border: 2px solid black; */
+  font-size: 40px;
+  padding: 1px;
+}
