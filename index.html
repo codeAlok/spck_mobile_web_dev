@@ -1,22 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
-  <script src="main.js"></script>
+    <div class="top">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="ibook.png">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#form-section" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#vd-section" class="nav-link">Working</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <section id="form-section">
+            <h2>Listen Summary of Books Online</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input id="email" type="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Join" id="submit">
+            </form>
+        </section>
+        <section id="features">
+            <div class="specs">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <div class="detail">
+                    <h3>Premium contents</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et unde aut, incidunt architecto ipsam ut esse sit. Quam accusamus saepe.</p>
+                </div>
+            </div>
+            <div class="specs">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <div class="detail">
+                    <h3>Quality audio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus enim? Possimus maiores, minus quidem facere animi harum neque officiis?</p>
+                    
+                </div>
+            </div>
+            <div class="specs">
+                <i class="fa-solid fa-download"></i>
+                <div class="detail">
+                    <h3>You can Download</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum maiores iusto modi reprehenderit rerum quas quis atque voluptatem ad perferendis!</p>
+                </div>
+            </div>
+        </section>
+        <section id="vd-section">
+            <iframe src="https://www.youtube.com/watch?v=GihybX7JyG4&t=2s" height="200" width="300" title="Iframe Example" id="video"></iframe>
+        </section>
+        <section id="pricing">
+            <div class="content">
+                <h3>First content</h3>
+                <p class="price">$230</p>
+                <ol>
+                    <li>Get 10 audiobooks </li>
+                    <li>2 hr max in 1 day</li>
+                    <li>N0 recomendation</li>
+                    <li>N0 suggestion</li>
+                    <li>No notes</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="content">
+                <h3>Second content</h3>
+                <p class="price">$500</p>
+                <ol>
+                    <li>Get 25 audibooks</li>
+                    <li>4 hr max in 1 day</li>
+                    <li>Get recommendations</li>
+                    <li>No suggestions</li>
+                    <li>2 notes every day</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="content">
+                <h3>Third content</h3>
+                <p class="price">$800</p>
+                <ol>
+                    <li>Get all audibooks</li>
+                    <li>Unlimited listen time</li>
+                    <li>Get recommendations</li>
+                    <li>Get suggestions</li>
+                    <li>Notes on every content</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+
+    </div>
+    <footer id="footer">
+        <p>Coyright@ibooks.com</p>
+        <p>Home</p>
+    </footer>
 </body>
 </html>
